@@ -1,2 +1,0 @@
-# photogallery
- photogallery assignment
