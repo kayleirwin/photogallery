@@ -1,0 +1,399 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+:root{
+    --teal: #007d7b;
+    --black: #000000;
+    --white: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html{
+    background-color: var(--black);
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    width: 485px;
+    margin: 0 auto;
+}
+main{
+    background-color: var(--white);
+    padding-bottom: 5px;
+}
+h1{
+    color: var(--teal);
+    text-transform: uppercase;
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    font-size: 3em;
+    font-weight: bolder;
+    padding: 5px;
+}
+h2{
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+p{
+    font-size: 1.25em;
+    font-weight: 500;
+}
+[href="#top"]{
+    position: fixed;
+    bottom: 0px;
+    right: 25px;
+    border: 2px solid var(--white);
+}
+[href="#top"]:hover{
+    border: 2px solid var(--teal);
+}
+nav{
+    display: flex;
+    justify-content: center;
+    padding: 30px 0 20px 0;
+}
+li{
+    display: inline;
+}
+nav a{
+    text-decoration: none;
+    color: var(--white);
+    padding: 10px;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+nav a:hover{
+    color: var(--teal);
+}
+#about{
+    margin: 10px;
+}
+#about h2{
+    padding: 15px 0 20px 0;
+}
+#gallery{
+    margin: 10px;
+}
+#gallery h2{
+    padding: 15px 0 20px 0;
+}
+figure{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 15px 0 15px 0;
+}
+figcaption{
+    text-transform: uppercase;
+}
+#chile{
+    position: relative;
+}
+#chile figcaption{
+    position: absolute;
+    bottom: 15px;
+    color: var(--white);
+}
+#guat{
+    position: relative;
+}
+#guat figcaption{
+    position: absolute;
+    top: 15px;
+    color: var(--white);
+}
+#hawaii{
+    position: relative;
+}
+#hawaii figcaption{
+    position: absolute;
+    bottom: 15px;
+    color: var(--white);
+}
+#iran{
+    position: relative;
+}
+#iran figcaption{
+    position: absolute;
+    top: 15px;
+}
+#ireland{
+    position: relative;
+}
+#ireland figcaption{
+    position: absolute;
+    top: 15px;
+}
+#italy{
+    position: relative;
+}
+#italy figcaption{
+    position: absolute;
+    bottom: 15px;
+}
+#desert{
+    position: relative;
+}
+#desert figcaption{
+    position: absolute;
+    bottom: 15px;
+    color: var(--white);
+}
+#rocky{
+    position: relative;
+}
+#rocky figcaption{
+    position: absolute;
+    top: 15px;
+}
+#switz{
+    position: relative;
+}
+#switz figcaption{
+    position: absolute;
+    top: 15px;
+}
+#uk{
+    position: relative;
+}
+#uk figcaption{
+    position: absolute;
+    top: 15px;
+}
+#usa{
+    position: relative;
+}
+#usa figcaption{
+    position: absolute;
+    top: 15px;
+}
+#wyoming{
+    position: relative;
+}
+#wyoming figcaption{
+    position: absolute;
+    top: 15px;
+    color: var(--white);
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+}
+form p{
+    visibility: hidden;
+}
+#form h2{
+    display: flex;
+    justify-content: center;
+    color: var(--white);
+    padding: 20px 0 20px 0;
+}
+#form p{
+    display: flex;
+    width: 95%;
+    color: var(--white);
+    text-align: center;
+}
+label{
+    color: var(--white);
+    text-transform: uppercase;
+    padding: 10px 0 0px 0;
+    margin-left: 10px;
+}
+input{
+    height: 35px;
+    padding: 0 10px 0 10px;
+}
+input::placeholder{
+    color: var(--teal);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+#message{
+    margin-bottom: 25px;
+}
+#submit{
+    display: block;
+    margin: auto;
+}
+.submit{
+    background-color: var(--teal);
+    color: var(--white);
+    border-radius: 12px;
+    border: 1px solid var(--black);
+    width: 60%;
+    padding: 5px 0 5px 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1em;
+    display: block;
+    justify-content: center;
+}
+.submit:hover{
+    border: 1px solid var(--white);
+}
+footer{
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    padding: 60px 0 20px 0;
+    text-transform: uppercase;
+}
+@media screen and (min-width:880px){
+    body{
+        width: 880px;
+    }
+    h1{
+        justify-content: left;
+    }
+    #gallery div{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #chile figcaption{
+        position: absolute;
+        bottom: 15px;
+        color: var(--white);
+    }
+    #guat figcaption{
+        position: absolute;
+        top: 15px;
+        color: var(--white);
+    }
+    #hawaii figcaption{
+        position: absolute;
+        bottom: 185px;
+        color: var(--white);
+    }
+    #hawaii{
+        position: relative;
+        bottom: 174px;
+    }
+    #iran figcaption{
+        position: absolute;
+        top: 15px;
+    }
+    #ireland figcaption{
+        position: absolute;
+        top: 15px;
+    }
+    #italy figcaption{
+        position: absolute;
+        bottom: 15px;
+    }
+    #desert figcaption{
+        position: absolute;
+        bottom: 15px;
+        color: var(--white);
+    }
+    #rocky figcaption{
+        position: absolute;
+        top:15px;
+    }
+    #switz figcaption{
+        position: absolute;
+        top: 15px;
+    }
+    #uk figcaption{
+        position: absolute;
+        top: 15px;
+    }
+    #usa figcaption{
+        position: absolute;
+        top: 15px;
+    }
+    #wyoming figcaption{
+        position: absolute;
+        top: 15px;
+        color: var(--white);
+    }
+    #form p{
+        justify-content: center;
+    }
+}
+@media screen and (min-width:1300px){
+    body{
+        width: 1300px;
+    }
+    h1{
+        justify-content: left;
+    }
+    nav{
+        justify-content: right;
+    }
+    #gallery div{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+    }
+    #hawaii figcaption{
+        position: absolute;
+        bottom: 10px;
+        color: var(--white)
+    }
+    #hawaii{
+        position: relative;
+        top: 0px;
+    }
+}
