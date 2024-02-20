@@ -4,99 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Photo Gallery</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <h1>TK Photography</h1>
         <nav>
             <ul>
-                <li>About</li>
-                <li>Gallery</li>
-                <li>Contact</li>
-                <li>top</li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#top">Top</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <article class="about">
+        <section id="about">
             <h2>About</h2>
-            <p>Hello! <br> I'm TK and I'm a photographer. I love looking at life through the lens of my camera. Landscape photography is my specialty and it's taken me all over the world.</p>   
-        </article>
-        <article class="gallery">
+            <p>Hello!</p> <br> <p>I'm TK and I'm a photographer. I love looking at life through the lens of my camera. Landscape photography is my specialty and it's taken me all over the world.</p>   
+        </section>
+        <section id="gallery">
             <h2>Gallery</h2>
             <p>Here are some highlights of my work. The locations and year are in the caption.</p>
-        </article>
-        <section id="images">
-            <section>
-                <img src="images/Chile.png" alt="chile-pic">
-                <caption>Chile, 2001</caption>
-            </section>
-            <section>
-                <img src="images/Guatemala.png" alt="guatemala-pic">
-                <caption>Guatemala, 1997</caption>
-            </section>
-            <section>
-                <img src="images/Hawaii.png" alt="hawaii-pic">
-                <caption>Hawaii, 2010</caption>
-            </section>
-            <section>
-                <img src="images/Iran.png" alt="iran-pic">
-                <caption>Iran, 1999</caption>
-            </section>
-            <section>
-                <img src="images/Ireland.png" alt="ireland-pic">
-                <caption>Ireland, 2012</caption>
-            </section>
-            <section>
-                <img src="images/Italy.png" alt="italy-pic">
-                <caption>Italy, 2015</caption>
-            </section>
-            <section>
-                <img src="images/Moab-Desert.png" alt="desert-pic">
-                <caption>Moab Desert, 2009</caption>
-            </section>
-            <section>
-                <img src="images/Rocky-Mountains.png" alt="rocky-pic">
-                <caption>Rocky Mountains, 2009</caption>
-            </section>
-            <section>
-                <img src="images/Switzerland.png" alt="switz-pic">
-                <caption>Switzerland, 2014</caption>
-            </section>
-            <section>
-                <img src="images/UK.png" alt="uk-pic">
-                <caption>UK, 2005</caption>
-            </section>
-            <section>
-                <img src="images/USA.png" alt="usa-pic">
-                <caption>USA, 2021</caption>
-            </section>
-            <section>
-                <img src="images/Wyoming.png" alt="wyoming-pic">
-                <caption>Wyoming, 2021</caption>
-            </section>
+            <div>
+                <figure id="chile">
+                    <img src="images/Chile.png" alt="chile-pic">
+                    <figcaption>Chile, 2001</figcaption>
+                </figure>
+                <figure id="guat">
+                    <img src="images/Guatemala.png" alt="guatemala-pic">
+                    <figcaption>Guatemala, 1997</figcaption>
+                </figure>
+                <figure id="hawaii">
+                    <img src="images/Hawaii.png" alt="hawaii-pic">
+                    <figcaption>Hawaii, 2010</figcaption>
+                </figure>
+                <figure id="iran">
+                    <img src="images/Iran.png" alt="iran-pic">
+                    <figcaption>Iran, 1999</figcaption>
+                </figure>
+                <figure id="ireland">
+                    <img src="images/Ireland.png" alt="ireland-pic">
+                    <figcaption>Ireland, 2012</figcaption>
+                </figure>
+                <figure id="italy">
+                    <img src="images/Italy.png" alt="italy-pic">
+                    <figcaption>Italy, 2015</figcaption>
+                </figure>
+                <figure id="desert">
+                    <img src="images/Moab-Desert.png" alt="desert-pic">
+                    <figcaption>Moab Desert, 2020</figcaption>
+                </figure>
+                <figure id="rocky">
+                    <img src="images/Rocky-Mountains.png" alt="rocky-pic">
+                    <figcaption>Rocky Mountains, 2009</figcaption>
+                </figure>
+                <figure id="switz">
+                    <img src="images/Switzerland.png" alt="switz-pic">
+                    <figcaption>Switzerland, 2014</figcaption>
+                </figure>
+                <figure id="uk">
+                    <img src="images/UK.png" alt="uk-pic">
+                    <figcaption>UK, 2005</figcaption>
+                </figure>
+                <figure id="usa">
+                    <img src="images/USA.png" alt="usa-pic">
+                    <figcaption>USA, 2021</figcaption>
+                </figure>
+                <figure id="wyoming">
+                    <img src="images/Wyoming.png" alt="wyoming-pic">
+                    <figcaption>Wyoming, 2021</figcaption>
+                </figure>
+            </div>
         </section>
     </main>
     <section id="form">
         <h2>Contact</h2>
         <p>Please fill out this form and i'll connect with you soon.</p>
-    <form>
-        <fieldset>
-            <legend>Name</legend>
-            <label for="name" name="Name"></label>
-            <input type="text" placeholder="Your full name" id="name">
-            <legend>Email</legend>
-            <label for="email" name="email"></label>
-            <input type="text" placeholder="Enter your email address" id="email">
-            <legend>Message</legend>
-            <label for="message" name="message"></label>
-            <input type="text" placeholder="What can I hep with?" id="message">
-            <button type="submit">Submit</button>
-        </fieldset>
-    </form>
+        <form>
+            <p>Your contact information</p>
+                
+                <label for="name">Name</label>
+                <input type="text" placeholder="Your full name" id="name">
+                <label for="email">Email</label>
+                <input type="text" placeholder="Enter your email address" id="email">
+                <label for="message">Message</label>
+                <input type="text" placeholder="What can I help you with?" id="message">
+                <input type="submit" class="submit" id="submit">
+        </form>
     </section>
 <footer>
-    &copy; Copyright 2021 TK Photography
+    &copy; 2021 TK Photography
 </footer>
 </body>
 </html>
